@@ -6,7 +6,7 @@ Repository for storing customized Google Sheets formulas.
 `PT`
 Repositório para armazenamento de fórmulas personalizadas do Google Sheets.
 
-### Fórmula SALDO (Balance)
+### Fórmula SALDO (Balance) - saldo.gs
 
 =**SALDO**(cell1; cell2; cell3; cell4; cell5)
 
