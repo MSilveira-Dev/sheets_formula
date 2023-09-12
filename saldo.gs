@@ -13,26 +13,21 @@
 
 function SALDO(P1,P2,P3,Add,Total){
 
-    // Obtém os valores nas colunas K, N, Q, S e U na mesma linha
-    var valorK = P1;
-    var valorN = P2;
-    var valorQ = P3;
-    var valorS = Add;
-    var valorU = Total;
+    var valorP1 = P1;
+    var valorP2 = P2;
+    var valorP3 = P3;
+    var valorAdd = Add;
+    var valorTotal = Total;
 
-    // Converte células vazias para zero
-    valorK = valorK === "" ? 0 : valorK;
-    valorN = valorN === "" ? 0 : valorN;
-    valorQ = valorQ === "" ? 0 : valorQ;
-    valorS = valorS === "" ? 0 : valorS;
-    valorU = valorU === "" ? 0 : valorU;
+    valorP1 = valorP1 === "" ? 0 : valorP1;
+    valorP2 = valorP2 === "" ? 0 : valorP2;
+    valorP3 = valorP3 === "" ? 0 : valorP3;
+    valorAdd = valorAdd === "" ? 0 : valorAdd;
+    valorTotal = valorTotal === "" ? 0 : valorTotal;
 
-    // Calcula a soma dos valores nas colunas K, N, Q, S
-    var soma = valorK + valorN + valorQ;
+    var soma = valorP1 + valorP2 + valorP3;
 
-    // Calcula a diferença entre a soma e o valor em U
-    var diferenca = (valorU + valorS) - soma;
+    var diferenca = (valorTotal + valorAdd) - soma;
 
-    // Insere o resultado na coluna T na mesma linha
     return diferenca;
 }
